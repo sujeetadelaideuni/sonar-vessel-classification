@@ -1,0 +1,213 @@
+{
+ "run": "cnn_scratch_n24000_s0_s1+s2+s3",
+ "test_set": "deepship",
+ "n_test": 5723,
+ "meta": {
+  "model": "cnn",
+  "mode": "scratch",
+  "aug": false,
+  "n_train": 24000,
+  "seed": 0,
+  "train_scenario": "s1+s2+s3",
+  "train_scenarios": [
+   "inclusion_2000_exclusion_4000",
+   "inclusion_3000_exclusion_5000",
+   "inclusion_4000_exclusion_6000"
+  ],
+  "fmin": 0.0,
+  "epochs": 15,
+  "freeze_epochs": null,
+  "unfreeze_lr_div": null,
+  "norm": false,
+  "lr": 0.001,
+  "bs": 64,
+  "best_epoch": 15,
+  "best_val_macro_f1": 0.7041549718063365,
+  "train_minutes": 2.5958044727643332,
+  "history": [
+   {
+    "phase": "scratch",
+    "epoch": 1,
+    "train_loss": 1.128490617275238,
+    "val_macro_f1": 0.24682112660601935
+   },
+   {
+    "phase": "scratch",
+    "epoch": 2,
+    "train_loss": 0.9324839676221212,
+    "val_macro_f1": 0.5488131296947862
+   },
+   {
+    "phase": "scratch",
+    "epoch": 3,
+    "train_loss": 0.8586345844268799,
+    "val_macro_f1": 0.5591878719841434
+   },
+   {
+    "phase": "scratch",
+    "epoch": 4,
+    "train_loss": 0.8215934851964315,
+    "val_macro_f1": 0.515410458936421
+   },
+   {
+    "phase": "scratch",
+    "epoch": 5,
+    "train_loss": 0.777562284708023,
+    "val_macro_f1": 0.5022221431674664
+   },
+   {
+    "phase": "scratch",
+    "epoch": 6,
+    "train_loss": 0.7558543032010396,
+    "val_macro_f1": 0.572583150653116
+   },
+   {
+    "phase": "scratch",
+    "epoch": 7,
+    "train_loss": 0.7289613707860311,
+    "val_macro_f1": 0.6146979798435874
+   },
+   {
+    "phase": "scratch",
+    "epoch": 8,
+    "train_loss": 0.703253476301829,
+    "val_macro_f1": 0.6651467739030794
+   },
+   {
+    "phase": "scratch",
+    "epoch": 9,
+    "train_loss": 0.6839515438874563,
+    "val_macro_f1": 0.6320458938000222
+   },
+   {
+    "phase": "scratch",
+    "epoch": 10,
+    "train_loss": 0.6621671952406565,
+    "val_macro_f1": 0.6819405590605048
+   },
+   {
+    "phase": "scratch",
+    "epoch": 11,
+    "train_loss": 0.6488961276213328,
+    "val_macro_f1": 0.6803776594009444
+   },
+   {
+    "phase": "scratch",
+    "epoch": 12,
+    "train_loss": 0.6340527563095093,
+    "val_macro_f1": 0.6530738227701012
+   },
+   {
+    "phase": "scratch",
+    "epoch": 13,
+    "train_loss": 0.6212257750829061,
+    "val_macro_f1": 0.6818973248214016
+   },
+   {
+    "phase": "scratch",
+    "epoch": 14,
+    "train_loss": 0.6127085825602213,
+    "val_macro_f1": 0.6939993523144965
+   },
+   {
+    "phase": "scratch",
+    "epoch": 15,
+    "train_loss": 0.6085814343293507,
+    "val_macro_f1": 0.7041549718063365
+   }
+  ],
+  "device": "cuda"
+ },
+ "test_macro_f1": 0.37144847419163685,
+ "test_accuracy": 0.3880831731609296,
+ "report": {
+  "cargo": {
+   "precision": 0.7670863309352518,
+   "recall": 0.367039586919105,
+   "f1-score": 0.49650756693830034,
+   "support": 2324.0
+  },
+  "passengership": {
+   "precision": 0.2986899563318777,
+   "recall": 0.29842931937172773,
+   "f1-score": 0.29855958096900914,
+   "support": 1146.0
+  },
+  "tanker": {
+   "precision": 0.4762954796030871,
+   "recall": 0.5204819277108433,
+   "f1-score": 0.49740932642487046,
+   "support": 1660.0
+  },
+  "tug": {
+   "precision": 0.14958448753462603,
+   "recall": 0.27318718381112983,
+   "f1-score": 0.19331742243436753,
+   "support": 593.0
+  },
+  "micro avg": {
+   "precision": 0.43092743500194025,
+   "recall": 0.3880831731609296,
+   "f1-score": 0.40838466488921576,
+   "support": 5723.0
+  },
+  "macro avg": {
+   "precision": 0.42291406360121064,
+   "recall": 0.36478450445320154,
+   "f1-score": 0.37144847419163685,
+   "support": 5723.0
+  },
+  "weighted avg": {
+   "precision": 0.524962680464619,
+   "recall": 0.3880831731609296,
+   "f1-score": 0.42571546019988815,
+   "support": 5723.0
+  }
+ },
+ "confusion": [
+  [
+   65,
+   853,
+   379,
+   791,
+   236
+  ],
+  [
+   42,
+   43,
+   342,
+   132,
+   587
+  ],
+  [
+   154,
+   210,
+   334,
+   864,
+   98
+  ],
+  [
+   308,
+   6,
+   90,
+   27,
+   162
+  ]
+ ],
+ "confusion_rows": [
+  "cargo",
+  "passengership",
+  "tanker",
+  "tug"
+ ],
+ "confusion_cols": [
+  "background",
+  "cargo",
+  "passengership",
+  "tanker",
+  "tug"
+ ],
+ "recording_vote_accuracy": 0.5238095238095238,
+ "n_recordings": 63,
+ "fraction_predicted_background": 0.09942337934649659
+}

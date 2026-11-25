@@ -1,0 +1,20 @@
+| Model | Train scenario | Test set | Macro-F1 | Runs |
+|---|---|---|---|---|
+| CNN (scratch-fmin50, n=36510) | inclusion_2000_exclusion_4000 | inclusion_2000_exclusion_4000-clean | 0.734 | 1 |
+| CNN (scratch-fmin50, n=36510) | inclusion_2000_exclusion_4000 | inclusion_2000_exclusion_4000 | 0.786 | 1 |
+| CNN (scratch, n=24000) | s1+s2+s3 | deepship | 0.371 | 1 |
+| CNN (scratch, n=24000) | s1+s2+s3 | inclusion_2000_exclusion_4000-clean | 0.613 | 1 |
+| CNN (scratch, n=24000) | s1+s2+s3 | inclusion_3000_exclusion_5000-clean | 0.687 | 1 |
+| CNN (scratch, n=24000) | s1+s2+s3 | inclusion_4000_exclusion_6000-clean | 0.670 | 1 |
+| CNN (scratch, n=36510) | inclusion_2000_exclusion_4000 | deepship | 0.285 | 1 |
+| CNN (scratch, n=36510) | inclusion_2000_exclusion_4000 | inclusion_2000_exclusion_4000-clean | 0.773 | 1 |
+| CNN (scratch, n=36510) | inclusion_2000_exclusion_4000 | inclusion_3000_exclusion_5000-clean | 0.530 | 1 |
+| CNN (scratch, n=36510) | inclusion_2000_exclusion_4000 | inclusion_4000_exclusion_6000-clean | 0.464 | 1 |
+| PANNS (ft-last2, n=24000) | s1+s2+s3 | deepship | 0.442 | 1 |
+| PANNS (ft-last2, n=24000) | s1+s2+s3 | inclusion_2000_exclusion_4000-clean | 0.457 | 1 |
+| PANNS (ft-last2, n=24000) | s1+s2+s3 | inclusion_3000_exclusion_5000-clean | 0.502 | 1 |
+| PANNS (ft-last2, n=24000) | s1+s2+s3 | inclusion_4000_exclusion_6000-clean | 0.465 | 1 |
+| PANNS (ft-last2, n=4000) | inclusion_2000_exclusion_4000 | deepship | 0.344 | 1 |
+| PANNS (ft-last2, n=4000) | inclusion_2000_exclusion_4000 | inclusion_2000_exclusion_4000-clean | 0.428 | 1 |
+| PANNS (ft-last2, n=4000) | inclusion_2000_exclusion_4000 | inclusion_3000_exclusion_5000-clean | 0.392 | 1 |
+| PANNS (ft-last2, n=4000) | inclusion_2000_exclusion_4000 | inclusion_4000_exclusion_6000-clean | 0.347 | 1 |

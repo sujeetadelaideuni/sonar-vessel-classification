@@ -1,0 +1,165 @@
+{
+ "run": "panns_ft-last2_n24000_s0_s1+s2+s3",
+ "test_set": "inclusion_2000_exclusion_4000-clean",
+ "n_test": 1754,
+ "meta": {
+  "model": "panns",
+  "mode": "ft-last2",
+  "aug": false,
+  "n_train": 24000,
+  "seed": 0,
+  "train_scenario": "s1+s2+s3",
+  "train_scenarios": [
+   "inclusion_2000_exclusion_4000",
+   "inclusion_3000_exclusion_5000",
+   "inclusion_4000_exclusion_6000"
+  ],
+  "fmin": 0.0,
+  "epochs": 6,
+  "freeze_epochs": 3,
+  "unfreeze_lr_div": 20,
+  "norm": false,
+  "lr": 0.001,
+  "bs": 64,
+  "best_epoch": 6,
+  "best_val_macro_f1": 0.5204960869738471,
+  "train_minutes": 6.4179423173268635,
+  "history": [
+   {
+    "phase": "head_only",
+    "epoch": 1,
+    "train_loss": 1.5099918149312337,
+    "val_macro_f1": 0.38414491394474937
+   },
+   {
+    "phase": "head_only",
+    "epoch": 2,
+    "train_loss": 1.4560464998881022,
+    "val_macro_f1": 0.39590318943492486
+   },
+   {
+    "phase": "head_only",
+    "epoch": 3,
+    "train_loss": 1.4367735815048217,
+    "val_macro_f1": 0.35161329792808926
+   },
+   {
+    "phase": "unfrozen-last2",
+    "epoch": 4,
+    "train_loss": 1.4568909664154053,
+    "val_macro_f1": 0.4693374360732956
+   },
+   {
+    "phase": "unfrozen-last2",
+    "epoch": 5,
+    "train_loss": 1.2705986057917278,
+    "val_macro_f1": 0.5022230231324611
+   },
+   {
+    "phase": "unfrozen-last2",
+    "epoch": 6,
+    "train_loss": 1.2010559439659119,
+    "val_macro_f1": 0.5204960869738471
+   }
+  ],
+  "device": "cuda"
+ },
+ "test_macro_f1": 0.4571229706307641,
+ "test_accuracy": 0.5912200684150513,
+ "report": {
+  "background": {
+   "precision": 0.9578947368421052,
+   "recall": 0.8210526315789474,
+   "f1-score": 0.8842105263157894,
+   "support": 665.0
+  },
+  "cargo": {
+   "precision": 0.8961038961038961,
+   "recall": 0.34966216216216217,
+   "f1-score": 0.503037667071689,
+   "support": 592.0
+  },
+  "passengership": {
+   "precision": 0.06593406593406594,
+   "recall": 0.9,
+   "f1-score": 0.12286689419795221,
+   "support": 20.0
+  },
+  "tanker": {
+   "precision": 0.1258741258741259,
+   "recall": 0.5806451612903226,
+   "f1-score": 0.20689655172413793,
+   "support": 62.0
+  },
+  "tug": {
+   "precision": 0.583756345177665,
+   "recall": 0.5542168674698795,
+   "f1-score": 0.5686032138442522,
+   "support": 415.0
+  },
+  "accuracy": 0.5912200684150513,
+  "macro avg": {
+   "precision": 0.5259126339863716,
+   "recall": 0.6411153645002623,
+   "f1-score": 0.4571229706307641,
+   "support": 1754.0
+  },
+  "weighted avg": {
+   "precision": 0.8089368682241246,
+   "recall": 0.5912200684150513,
+   "f1-score": 0.648263145235268,
+   "support": 1754.0
+  }
+ },
+ "confusion": [
+  [
+   546,
+   1,
+   29,
+   10,
+   79
+  ],
+  [
+   6,
+   207,
+   107,
+   194,
+   78
+  ],
+  [
+   1,
+   1,
+   18,
+   0,
+   0
+  ],
+  [
+   2,
+   10,
+   7,
+   36,
+   7
+  ],
+  [
+   15,
+   12,
+   112,
+   46,
+   230
+  ]
+ ],
+ "confusion_rows": [
+  "background",
+  "cargo",
+  "passengership",
+  "tanker",
+  "tug"
+ ],
+ "confusion_cols": [
+  "background",
+  "cargo",
+  "passengership",
+  "tanker",
+  "tug"
+ ]
+}

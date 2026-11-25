@@ -1,0 +1,212 @@
+{
+ "run": "cnn_scratch_nfull_s0_inclusion_2000_exclusion_4000",
+ "test_set": "inclusion_4000_exclusion_6000-clean",
+ "n_test": 2415,
+ "meta": {
+  "model": "cnn",
+  "mode": "scratch",
+  "aug": false,
+  "n_train": 36510,
+  "seed": 0,
+  "train_scenario": "inclusion_2000_exclusion_4000",
+  "epochs": 15,
+  "freeze_epochs": null,
+  "norm": false,
+  "lr": 0.001,
+  "bs": 64,
+  "best_epoch": 14,
+  "best_val_macro_f1": 0.8036087042489264,
+  "train_minutes": 39.6400522351265,
+  "history": [
+   {
+    "phase": "scratch",
+    "epoch": 1,
+    "train_loss": 0.8301514761933102,
+    "val_macro_f1": 0.41816292282371403
+   },
+   {
+    "phase": "scratch",
+    "epoch": 2,
+    "train_loss": 0.5980584650815464,
+    "val_macro_f1": 0.47881258828077095
+   },
+   {
+    "phase": "scratch",
+    "epoch": 3,
+    "train_loss": 0.5288404991645678,
+    "val_macro_f1": 0.7329742246494823
+   },
+   {
+    "phase": "scratch",
+    "epoch": 4,
+    "train_loss": 0.4782988357759443,
+    "val_macro_f1": 0.6572715607905943
+   },
+   {
+    "phase": "scratch",
+    "epoch": 5,
+    "train_loss": 0.4448741299098435,
+    "val_macro_f1": 0.6606792085068905
+   },
+   {
+    "phase": "scratch",
+    "epoch": 6,
+    "train_loss": 0.4234130779918466,
+    "val_macro_f1": 0.6177966618253752
+   },
+   {
+    "phase": "scratch",
+    "epoch": 7,
+    "train_loss": 0.39543632615170915,
+    "val_macro_f1": 0.7278792754842983
+   },
+   {
+    "phase": "scratch",
+    "epoch": 8,
+    "train_loss": 0.3748035611289392,
+    "val_macro_f1": 0.6278705883737257
+   },
+   {
+    "phase": "scratch",
+    "epoch": 9,
+    "train_loss": 0.35553074281318847,
+    "val_macro_f1": 0.6547388284589857
+   },
+   {
+    "phase": "scratch",
+    "epoch": 10,
+    "train_loss": 0.33918038318579047,
+    "val_macro_f1": 0.6503651866040003
+   },
+   {
+    "phase": "scratch",
+    "epoch": 11,
+    "train_loss": 0.3264227676803006,
+    "val_macro_f1": 0.7565193314575439
+   },
+   {
+    "phase": "scratch",
+    "epoch": 12,
+    "train_loss": 0.309072125769419,
+    "val_macro_f1": 0.7688113877880276
+   },
+   {
+    "phase": "scratch",
+    "epoch": 13,
+    "train_loss": 0.3032585054325816,
+    "val_macro_f1": 0.7812094220639774
+   },
+   {
+    "phase": "scratch",
+    "epoch": 14,
+    "train_loss": 0.29874901467889864,
+    "val_macro_f1": 0.8036087042489264
+   },
+   {
+    "phase": "scratch",
+    "epoch": 15,
+    "train_loss": 0.2936274351109808,
+    "val_macro_f1": 0.7903109912546504
+   }
+  ],
+  "device": "cpu"
+ },
+ "test_macro_f1": 0.4641297079024918,
+ "test_accuracy": 0.660455486542443,
+ "report": {
+  "background": {
+   "precision": 0.7135636057287279,
+   "recall": 0.9246724890829694,
+   "f1-score": 0.8055159296243461,
+   "support": 916.0
+  },
+  "cargo": {
+   "precision": 0.7126213592233009,
+   "recall": 0.590032154340836,
+   "f1-score": 0.6455584872471416,
+   "support": 622.0
+  },
+  "passengership": {
+   "precision": 0.28888888888888886,
+   "recall": 0.09885931558935361,
+   "f1-score": 0.14730878186968838,
+   "support": 263.0
+  },
+  "tanker": {
+   "precision": 0.04918032786885246,
+   "recall": 0.2,
+   "f1-score": 0.07894736842105263,
+   "support": 30.0
+  },
+  "tug": {
+   "precision": 0.6966067864271457,
+   "recall": 0.5976027397260274,
+   "f1-score": 0.6433179723502304,
+   "support": 584.0
+  },
+  "accuracy": 0.660455486542443,
+  "macro avg": {
+   "precision": 0.4921721936273832,
+   "recall": 0.4822333397478372,
+   "f1-score": 0.4641297079024918,
+   "support": 2415.0
+  },
+  "weighted avg": {
+   "precision": 0.6547189644603331,
+   "recall": 0.660455486542443,
+   "f1-score": 0.6443885288366531,
+   "support": 2415.0
+  }
+ },
+ "confusion": [
+  [
+   847,
+   23,
+   19,
+   7,
+   20
+  ],
+  [
+   97,
+   367,
+   27,
+   83,
+   48
+  ],
+  [
+   53,
+   93,
+   26,
+   18,
+   73
+  ],
+  [
+   11,
+   2,
+   0,
+   6,
+   11
+  ],
+  [
+   179,
+   30,
+   18,
+   8,
+   349
+  ]
+ ],
+ "confusion_rows": [
+  "background",
+  "cargo",
+  "passengership",
+  "tanker",
+  "tug"
+ ],
+ "confusion_cols": [
+  "background",
+  "cargo",
+  "passengership",
+  "tanker",
+  "tug"
+ ]
+}

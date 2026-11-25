@@ -1,0 +1,17 @@
+# Data, caches and trained weights are large and are not redistributed here (see README)
+data/
+deepship_data/
+cache/
+emb/
+models/
+logs/
+demo_output/
+*.zip
+*.npz
+*.pt
+*.pth
+# Python / editor
+__pycache__/
+*.pyc
+.vscode/
+.ipynb_checkpoints/

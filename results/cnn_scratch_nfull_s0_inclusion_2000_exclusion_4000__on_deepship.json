@@ -1,0 +1,206 @@
+{
+ "run": "cnn_scratch_nfull_s0_inclusion_2000_exclusion_4000",
+ "test_set": "deepship",
+ "n_test": 5723,
+ "meta": {
+  "model": "cnn",
+  "mode": "scratch",
+  "aug": false,
+  "n_train": 36510,
+  "seed": 0,
+  "train_scenario": "inclusion_2000_exclusion_4000",
+  "epochs": 15,
+  "freeze_epochs": null,
+  "norm": false,
+  "lr": 0.001,
+  "bs": 64,
+  "best_epoch": 14,
+  "best_val_macro_f1": 0.8036087042489264,
+  "train_minutes": 39.6400522351265,
+  "history": [
+   {
+    "phase": "scratch",
+    "epoch": 1,
+    "train_loss": 0.8301514761933102,
+    "val_macro_f1": 0.41816292282371403
+   },
+   {
+    "phase": "scratch",
+    "epoch": 2,
+    "train_loss": 0.5980584650815464,
+    "val_macro_f1": 0.47881258828077095
+   },
+   {
+    "phase": "scratch",
+    "epoch": 3,
+    "train_loss": 0.5288404991645678,
+    "val_macro_f1": 0.7329742246494823
+   },
+   {
+    "phase": "scratch",
+    "epoch": 4,
+    "train_loss": 0.4782988357759443,
+    "val_macro_f1": 0.6572715607905943
+   },
+   {
+    "phase": "scratch",
+    "epoch": 5,
+    "train_loss": 0.4448741299098435,
+    "val_macro_f1": 0.6606792085068905
+   },
+   {
+    "phase": "scratch",
+    "epoch": 6,
+    "train_loss": 0.4234130779918466,
+    "val_macro_f1": 0.6177966618253752
+   },
+   {
+    "phase": "scratch",
+    "epoch": 7,
+    "train_loss": 0.39543632615170915,
+    "val_macro_f1": 0.7278792754842983
+   },
+   {
+    "phase": "scratch",
+    "epoch": 8,
+    "train_loss": 0.3748035611289392,
+    "val_macro_f1": 0.6278705883737257
+   },
+   {
+    "phase": "scratch",
+    "epoch": 9,
+    "train_loss": 0.35553074281318847,
+    "val_macro_f1": 0.6547388284589857
+   },
+   {
+    "phase": "scratch",
+    "epoch": 10,
+    "train_loss": 0.33918038318579047,
+    "val_macro_f1": 0.6503651866040003
+   },
+   {
+    "phase": "scratch",
+    "epoch": 11,
+    "train_loss": 0.3264227676803006,
+    "val_macro_f1": 0.7565193314575439
+   },
+   {
+    "phase": "scratch",
+    "epoch": 12,
+    "train_loss": 0.309072125769419,
+    "val_macro_f1": 0.7688113877880276
+   },
+   {
+    "phase": "scratch",
+    "epoch": 13,
+    "train_loss": 0.3032585054325816,
+    "val_macro_f1": 0.7812094220639774
+   },
+   {
+    "phase": "scratch",
+    "epoch": 14,
+    "train_loss": 0.29874901467889864,
+    "val_macro_f1": 0.8036087042489264
+   },
+   {
+    "phase": "scratch",
+    "epoch": 15,
+    "train_loss": 0.2936274351109808,
+    "val_macro_f1": 0.7903109912546504
+   }
+  ],
+  "device": "cpu"
+ },
+ "test_macro_f1": 0.28474576733083135,
+ "test_accuracy": 0.3206360300541674,
+ "report": {
+  "cargo": {
+   "precision": 0.6140350877192983,
+   "recall": 0.4066265060240964,
+   "f1-score": 0.4892570541030287,
+   "support": 2324.0
+  },
+  "passengership": {
+   "precision": 0.2737752161383285,
+   "recall": 0.08289703315881326,
+   "f1-score": 0.12726054922973878,
+   "support": 1146.0
+  },
+  "tanker": {
+   "precision": 0.4670398009950249,
+   "recall": 0.45240963855421684,
+   "f1-score": 0.45960832313341493,
+   "support": 1660.0
+  },
+  "tug": {
+   "precision": 0.05452292441140025,
+   "recall": 0.07419898819561552,
+   "f1-score": 0.06285714285714286,
+   "support": 593.0
+  },
+  "micro avg": {
+   "precision": 0.42664496628691,
+   "recall": 0.3206360300541674,
+   "f1-score": 0.366121308858739,
+   "support": 5723.0
+  },
+  "macro avg": {
+   "precision": 0.352343257316013,
+   "recall": 0.2540330414831855,
+   "f1-score": 0.28474576733083135,
+   "support": 5723.0
+  },
+  "weighted avg": {
+   "precision": 0.4452878045399048,
+   "recall": 0.3206360300541674,
+   "f1-score": 0.36398708461794055,
+   "support": 5723.0
+  }
+ },
+ "confusion": [
+  [
+   311,
+   945,
+   199,
+   730,
+   139
+  ],
+  [
+   260,
+   144,
+   95,
+   111,
+   536
+  ],
+  [
+   330,
+   449,
+   42,
+   751,
+   88
+  ],
+  [
+   521,
+   1,
+   11,
+   16,
+   44
+  ]
+ ],
+ "confusion_rows": [
+  "cargo",
+  "passengership",
+  "tanker",
+  "tug"
+ ],
+ "confusion_cols": [
+  "background",
+  "cargo",
+  "passengership",
+  "tanker",
+  "tug"
+ ],
+ "recording_vote_accuracy": 0.31746031746031744,
+ "n_recordings": 63,
+ "fraction_predicted_background": 0.24847108160055914
+}

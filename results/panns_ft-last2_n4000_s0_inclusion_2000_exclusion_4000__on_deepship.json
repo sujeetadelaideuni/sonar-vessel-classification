@@ -1,0 +1,151 @@
+{
+ "run": "panns_ft-last2_n4000_s0_inclusion_2000_exclusion_4000",
+ "test_set": "deepship",
+ "n_test": 5723,
+ "meta": {
+  "model": "panns",
+  "mode": "ft-last2",
+  "aug": false,
+  "n_train": 4000,
+  "seed": 0,
+  "train_scenario": "inclusion_2000_exclusion_4000",
+  "epochs": 6,
+  "freeze_epochs": 3,
+  "lr": 0.001,
+  "bs": 16,
+  "best_epoch": 6,
+  "best_val_macro_f1": 0.4483497268799761,
+  "train_minutes": 35.31564249197642,
+  "history": [
+   {
+    "phase": "head_only",
+    "epoch": 1,
+    "train_loss": 1.5324768953323364,
+    "val_macro_f1": 0.3697885193002189
+   },
+   {
+    "phase": "head_only",
+    "epoch": 2,
+    "train_loss": 1.4545643725395203,
+    "val_macro_f1": 0.438580921056728
+   },
+   {
+    "phase": "head_only",
+    "epoch": 3,
+    "train_loss": 1.436598512172699,
+    "val_macro_f1": 0.3524024773232875
+   },
+   {
+    "phase": "unfrozen-last2",
+    "epoch": 4,
+    "train_loss": 1.6919162504673004,
+    "val_macro_f1": 0.4256899367594955
+   },
+   {
+    "phase": "unfrozen-last2",
+    "epoch": 5,
+    "train_loss": 1.2990833382606506,
+    "val_macro_f1": 0.4401146763169465
+   },
+   {
+    "phase": "unfrozen-last2",
+    "epoch": 6,
+    "train_loss": 1.2355577971935272,
+    "val_macro_f1": 0.4483497268799761
+   }
+  ],
+  "device": "cpu"
+ },
+ "test_macro_f1": 0.3436138533392237,
+ "test_accuracy": 0.33042110781058887,
+ "report": {
+  "cargo": {
+   "precision": 0.49411764705882355,
+   "recall": 0.16265060240963855,
+   "f1-score": 0.24473939786338622,
+   "support": 2324.0
+  },
+  "passengership": {
+   "precision": 0.31954674220963175,
+   "recall": 0.49214659685863876,
+   "f1-score": 0.38749570594297494,
+   "support": 1146.0
+  },
+  "tanker": {
+   "precision": 0.3602523659305994,
+   "recall": 0.34397590361445785,
+   "f1-score": 0.3519260400616333,
+   "support": 1660.0
+  },
+  "tug": {
+   "precision": 0.28125,
+   "recall": 0.6374367622259697,
+   "f1-score": 0.39029426948890034,
+   "support": 593.0
+  },
+  "micro avg": {
+   "precision": 0.3464004396409599,
+   "recall": 0.33042110781058887,
+   "f1-score": 0.3382221427293865,
+   "support": 5723.0
+  },
+  "macro avg": {
+   "precision": 0.36379168879976365,
+   "recall": 0.4090524662771762,
+   "f1-score": 0.3436138533392237,
+   "support": 5723.0
+  },
+  "weighted avg": {
+   "precision": 0.3982754072657241,
+   "recall": 0.33042110781058887,
+   "f1-score": 0.3194978451781213,
+   "support": 5723.0
+  }
+ },
+ "confusion": [
+  [
+   15,
+   378,
+   752,
+   727,
+   452
+  ],
+  [
+   1,
+   76,
+   564,
+   287,
+   218
+  ],
+  [
+   96,
+   307,
+   390,
+   571,
+   296
+  ],
+  [
+   152,
+   4,
+   59,
+   0,
+   378
+  ]
+ ],
+ "confusion_rows": [
+  "cargo",
+  "passengership",
+  "tanker",
+  "tug"
+ ],
+ "confusion_cols": [
+  "background",
+  "cargo",
+  "passengership",
+  "tanker",
+  "tug"
+ ],
+ "recording_vote_accuracy": 0.3492063492063492,
+ "n_recordings": 63,
+ "fraction_predicted_background": 0.04612965228027258
+}

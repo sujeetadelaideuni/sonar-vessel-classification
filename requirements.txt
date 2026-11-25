@@ -1,0 +1,9 @@
+# Core (the final runs used Google Colab with a Tesla T4 GPU; torch comes pre-installed there)
+torch
+numpy
+scipy
+scikit-learn
+matplotlib
+soundfile
+# Pretrained AudioSet model (PANNs CNN14) code; the checkpoint is downloaded separately (see README)
+panns_inference
